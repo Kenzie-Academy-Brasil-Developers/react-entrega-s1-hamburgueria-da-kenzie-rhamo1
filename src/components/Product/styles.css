@@ -1,0 +1,78 @@
+.productBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 350px;
+  left: 435px;
+  top: 470px;
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 2px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.productBox p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+  text-align: left;
+}
+
+/* .productBox button {
+  width: 106px;
+  height: 40px;
+  left: 20px;
+  top: 133px;
+
+  background: #27ae60;
+
+  border: 2px solid #27ae60;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ffffff;
+  cursor: pointer;
+} */
+
+.productBox h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #333333;
+  margin: 0;
+  text-align: left;
+}
+
+.productBox h4 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #27ae60;
+  margin: 0;
+  text-align: left;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  border: 1 px solid #b3b0b0;
+  border-radius: 8 px;
+  padding: 5 px 0;
+  width: 250 px;
+}
+
+.search input {
+  width: 50%;
+  border: none;
+}

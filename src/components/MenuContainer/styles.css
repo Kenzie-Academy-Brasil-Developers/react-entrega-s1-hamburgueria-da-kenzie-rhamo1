@@ -1,0 +1,11 @@
+.productContainer {
+  display: flex;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.productContainer li {
+  display: flex;
+  flex-direction: column;
+}
