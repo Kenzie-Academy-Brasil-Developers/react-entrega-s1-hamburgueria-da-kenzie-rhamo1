@@ -49,6 +49,10 @@
   text-align: left;
 }
 
+.image {
+  background-color: #e7e5e5;
+}
+
 .search {
   display: flex;
   justify-content: space-around;

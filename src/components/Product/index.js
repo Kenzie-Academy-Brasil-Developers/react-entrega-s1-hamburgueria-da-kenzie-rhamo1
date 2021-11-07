@@ -22,7 +22,7 @@ const Product = ({
           .map((item, key) => {
             return (
               <li className="productBox" key={key}>
-                <img src={item.img} alt="" />
+                <img className="image" src={item.img} alt="" />
                 <h3>{item.name}</h3>
                 <p>{item.category}</p>
                 <h4 className="price">R${item.price}</h4>
