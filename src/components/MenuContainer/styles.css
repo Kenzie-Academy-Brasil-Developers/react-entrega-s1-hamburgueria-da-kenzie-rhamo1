@@ -3,9 +3,17 @@
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
+  align-items: center;
 }
 
 .productContainer li {
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (min-width: 800px) {
+  .productContainer {
+    flex-direction: column;
+    max-width: 1300px;
+  }
 }

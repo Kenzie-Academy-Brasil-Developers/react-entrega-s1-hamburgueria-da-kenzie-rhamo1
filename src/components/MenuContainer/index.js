@@ -10,14 +10,14 @@ const MenuContainer = ({ products, handleClick }) => {
     <>
       {/* <FilterForm setFilteredProducts={setFilteredProducts} /> */}
 
-      <ul className="productContainer">
+      <div className="productContainer">
         <Product
           products={products}
           setFilteredProducts={setFilteredProducts}
           filteredProducts={filteredProducts}
           handleClick={handleClick}
         />
-      </ul>
+      </div>
     </>
   );
 };

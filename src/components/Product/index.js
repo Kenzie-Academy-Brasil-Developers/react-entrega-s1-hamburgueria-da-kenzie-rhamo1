@@ -8,7 +8,7 @@ const Product = ({
 }) => {
   return (
     <>
-      <li>
+      <ul className="liContainer">
         {products
           .filter((value) => {
             if (setFilteredProducts === "") {
@@ -21,7 +21,7 @@ const Product = ({
           })
           .map((item, key) => {
             return (
-              <div className="productBox" key={key}>
+              <li className="productBox" key={key}>
                 <img src={item.img} alt="" />
                 <h3>{item.name}</h3>
                 <p>{item.category}</p>
@@ -32,10 +32,10 @@ const Product = ({
                 >
                   Adicionar
                 </button>
-              </div>
+              </li>
             );
           })}
-      </li>
+      </ul>
     </>
   );
 };

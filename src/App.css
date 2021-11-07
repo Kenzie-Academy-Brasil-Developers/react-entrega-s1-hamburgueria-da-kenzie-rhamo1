@@ -18,4 +18,14 @@
 .mainContainer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1639px) {
+  .mainContainer {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }

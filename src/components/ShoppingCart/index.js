@@ -10,7 +10,7 @@ const ShoppingCart = ({
 }) => {
   return (
     <>
-      <span className="cartHeader">
+      <div className="cartHeader">
         <h2>Carrinho de compras</h2>
 
         {currentSale.map((item, key) => {
@@ -43,7 +43,7 @@ const ShoppingCart = ({
             Remover todos
           </button>
         </div>
-      </span>
+      </div>
     </>
   );
 };
