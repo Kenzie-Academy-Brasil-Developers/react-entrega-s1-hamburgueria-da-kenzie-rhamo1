@@ -1,8 +1,8 @@
+/* eslint-disable no-unused-vars */
 import "./App.css";
 import { useState } from "react";
 import MenuContainer from "./components/MenuContainer";
 import ShoppingCart from "./components/ShoppingCart";
-import FilterForm from "./components/FilterForm";
 
 function App() {
   const [products, setProducts] = useState([
@@ -43,14 +43,13 @@ function App() {
     },
     {
       id: 6,
-      name: "Fanta",
+      name: "Fanta Ovomaltine",
       category: "Bebidas",
       price: 4.99,
       img: "https://i.ibb.co/QNb3DJJ/milkshake-ovomaltine.png",
     },
   ]);
 
-  // const [filteredProducts, setFilteredProducts] = useState([]);
   const [currentSale, setCurrentSale] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
 
@@ -70,21 +69,18 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <FilterForm />
-      </header>
       <div className="mainContainer">
         <MenuContainer products={products} handleClick={handleClick} />
-        <div className="cart">
-          <ShoppingCart
-            cartTotal={cartTotal}
-            setCartTotal={setCartTotal}
-            currentSale={currentSale}
-            setCurrentSale={setCurrentSale}
-            handleRemove={handleRemove}
-            total={total}
-          />
-        </div>
+      </div>
+      <div className="sideBar">
+        <ShoppingCart
+          cartTotal={cartTotal}
+          setCartTotal={setCartTotal}
+          currentSale={currentSale}
+          setCurrentSale={setCurrentSale}
+          handleRemove={handleRemove}
+          total={total}
+        />
       </div>
     </div>
   );

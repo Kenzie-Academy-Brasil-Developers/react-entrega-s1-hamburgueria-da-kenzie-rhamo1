@@ -9,7 +9,7 @@ const ShoppingCart = ({
   handleRemove,
 }) => {
   return (
-    <>
+    <div className="cart">
       <div className="cartHeader">
         <h2>Carrinho de compras</h2>
 
@@ -23,7 +23,6 @@ const ShoppingCart = ({
                   <p>{item.category}</p>
                 </span>
 
-                {/* <h4 className="price">R${item.price}</h4> */}
                 <button
                   className="gray-button"
                   onClick={() => handleRemove(item)}
@@ -35,16 +34,16 @@ const ShoppingCart = ({
           );
         })}
         <div className="subtotal">
-          <span>
+          <div>
             <p className="totalP">Total: </p>
             <p className="totalValue">R${total}</p>
-          </span>
+          </div>
           <button className="removeAll" onClick={() => setCurrentSale([])}>
             Remover todos
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

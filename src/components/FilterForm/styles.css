@@ -4,6 +4,7 @@
   width: 100%;
   align-items: center;
   height: 139px;
+  justify-content: flex-end;
 }
 
 .header-title {
@@ -83,7 +84,7 @@
   border-radius: 8px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 860px) {
   .header {
     flex-direction: row;
   }

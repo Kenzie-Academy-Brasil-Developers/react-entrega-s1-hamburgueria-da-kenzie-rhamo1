@@ -1,6 +1,10 @@
 .liContainer {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
+  /* width: 60%; */
+  flex-wrap: wrap;
 }
 
 .productBox {
@@ -67,11 +71,11 @@
   border: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 860px) {
   .liContainer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 60%;
+    width: 780px;
   }
 }

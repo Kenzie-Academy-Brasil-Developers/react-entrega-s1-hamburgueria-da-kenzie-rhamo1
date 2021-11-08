@@ -1,5 +1,6 @@
 .cart {
-  width: 343px;
+  display: flex;
+  /* width: 343px; */
 }
 
 .cart-container {
@@ -48,8 +49,6 @@
   display: flex;
   width: 100%;
   height: 65px;
-  left: 16px;
-  top: 520px;
   background: #27ae60;
   border-radius: 5px 5px 0px 0px;
   flex-direction: column;
@@ -78,8 +77,6 @@
 }
 
 .subtotal {
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -110,11 +107,3 @@
 .removeAll:hover {
   background: #828282;
 }
-
-/* .totalP {
-  display: flex;
-}
-
-.totalValue {
-  display: flex;
-} */

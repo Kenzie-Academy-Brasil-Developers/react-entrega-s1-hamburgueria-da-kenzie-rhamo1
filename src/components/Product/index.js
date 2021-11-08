@@ -1,3 +1,4 @@
+import FilterForm from "../FilterForm";
 import "./styles.css";
 
 const Product = ({
@@ -8,10 +9,11 @@ const Product = ({
 }) => {
   return (
     <>
+      <FilterForm setFilteredProducts={setFilteredProducts} />
       <ul className="liContainer">
         {products
           .filter((value) => {
-            if (setFilteredProducts === "") {
+            if (filteredProducts === "") {
               return value;
             } else if (
               value.name.toLowerCase().includes(filteredProducts.toLowerCase())
@@ -25,7 +27,7 @@ const Product = ({
                 <img className="image" src={item.img} alt="" />
                 <h3>{item.name}</h3>
                 <p>{item.category}</p>
-                <h4 className="price">R${item.price}</h4>
+                <h4 className="price">R$ {item.price}</h4>
                 <button
                   className="green-button"
                   onClick={() => handleClick(item)}

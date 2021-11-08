@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./styles.css";
-import FilterForm from "../FilterForm";
 import Product from "../Product";
 
 const MenuContainer = ({ products, handleClick }) => {
@@ -8,8 +7,6 @@ const MenuContainer = ({ products, handleClick }) => {
 
   return (
     <>
-      {/* <FilterForm setFilteredProducts={setFilteredProducts} /> */}
-
       <div className="productContainer">
         <Product
           products={products}

@@ -1,10 +1,7 @@
-import { useState } from "react";
 import burguer from "./assets/burguer.png";
 import "./styles.css";
 
-const FilterForm = ({}) => {
-  const [filteredProducts, setFilteredProducts] = useState([]);
-
+const FilterForm = ({ setFilteredProducts }) => {
   return (
     <div className="header">
       <img src={burguer} alt="logo" className="header-title" />
