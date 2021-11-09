@@ -57,20 +57,6 @@
   background-color: #e7e5e5;
 }
 
-.search {
-  display: flex;
-  justify-content: space-around;
-  border: 1 px solid #b3b0b0;
-  border-radius: 8 px;
-  padding: 5 px 0;
-  width: 250 px;
-}
-
-.search input {
-  width: 50%;
-  border: none;
-}
-
 @media screen and (min-width: 860px) {
   .liContainer {
     flex-direction: row;

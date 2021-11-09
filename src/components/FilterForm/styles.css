@@ -5,31 +5,12 @@
   align-items: center;
   height: 139px;
   justify-content: flex-end;
+  padding-bottom: 10px;
 }
 
 .header-title {
   align-items: center;
   padding: 1rem;
-}
-
-.header-input {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 10px 0px 15px;
-
-  position: absolute;
-  width: 382px;
-  height: 60px;
-  left: 16px;
-  top: 65px;
-
-  background: #ffffff;
-
-  border: 2px solid #e0e0e0;
-  box-sizing: border-box;
-  border-radius: 8px;
 }
 
 .ProductCardMain {
@@ -77,15 +58,24 @@
   background: #93d7af;
 }
 
-.input {
-  background: #ffffff;
-  border: 2px solid #e0e0e0;
-  box-sizing: border-box;
+.search {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #b3b0b0;
   border-radius: 8px;
+  padding: 0px;
+  width: 250px;
+}
+
+.search input {
+  width: 100%;
+  height: 30px;
+  border: none;
 }
 
 @media screen and (min-width: 860px) {
   .header {
     flex-direction: row;
+    padding-bottom: 0;
   }
 }

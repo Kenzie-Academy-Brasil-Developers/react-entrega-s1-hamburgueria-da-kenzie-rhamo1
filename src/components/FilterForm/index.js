@@ -14,7 +14,6 @@ const FilterForm = ({ setFilteredProducts }) => {
             setFilteredProducts(event.target.value);
           }}
         />
-        <button className="green-button">Limpar</button>
       </div>
     </div>
   );
