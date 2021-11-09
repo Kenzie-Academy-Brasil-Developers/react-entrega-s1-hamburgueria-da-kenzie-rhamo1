@@ -55,6 +55,7 @@
 
 .image {
   background-color: #e7e5e5;
+  height: 200px;
 }
 
 @media screen and (min-width: 860px) {

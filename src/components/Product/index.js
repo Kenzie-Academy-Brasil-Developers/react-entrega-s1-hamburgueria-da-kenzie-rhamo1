@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import FilterForm from "../FilterForm";
 import "./styles.css";
 
